@@ -11,6 +11,7 @@ classdef tSimpleTest < glttestutilities.TestInfrastructure
 
             % Create an invisible control 
             button = uicontrol( 'Parent', [], 'Visible', 'off' );
+            
             testCase.addTeardown( @() delete( button ) )
        
         end 
